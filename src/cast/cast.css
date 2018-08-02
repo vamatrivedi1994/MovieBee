@@ -1,0 +1,29 @@
+.figureContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.figureContainer figure {
+  width: 48%;
+  margin: 0 0 20px;
+}
+
+@media(min-width: 768px) {
+  .figureContainer {
+    justify-content: flex-start;
+  }
+  .figureContainer figure {
+    width: 31.5%;
+    margin: 0 10.2px 20px 0;
+  }
+}
+
+@media(min-width: 992px) {
+  .figureContainer figure {
+    width: 15.5%;
+  }
+}
